@@ -13,7 +13,7 @@ include { KNIT_PHYLOSEQ             }   from './modules/knit_phyloseq.nf'
  * workflow
  */
 
-workflow kraken2Flow {
+workflow KrakenFlow {
     // required inputs
     take:
         bowtie2_index
