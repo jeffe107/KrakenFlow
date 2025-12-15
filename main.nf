@@ -16,16 +16,16 @@ log.info """\
 """
 .stripIndent()
 
-include { KrakenFlow } from './workflow.nf'
+include {KrakenFlow} from './workflow.nf'
 
 workflow {
 
     if(params.reads){
-            reads_ch = Channel.fromFilePairs( params.reads, checkIfExists:true )
+            reads_ch = Channel.fromFilePairs(params.reads, checkIfExists:true)
         } else {
-            reads_ch = Channel.fromPath( params.sheet_csv )
-                            .splitCsv( header:true )
-                            .map { row-> tuple(row.sample_id, [file(row.fastq_1), file(row.fastq_2)]) }
+            reads_ch = Channel.fromPath(params.sheet_csv)
+                            .splitCsv(header:true)
+                            .map {row-> tuple(row.sample_id, [file(row.fastq_1), file(row.fastq_2)])}
         }
-    KrakenFlow( params.bowtie2_index, params.kraken2_db, reads_ch )
+    KrakenFlow(params.bowtie2_index, params.kraken2_db, reads_ch)
 }
