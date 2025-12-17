@@ -15,7 +15,7 @@ log.info """\
 """
 .stripIndent()
 
-include {KrakenFlow} from './workflow.nf'
+include {TaxoFlow} from './workflow.nf'
 
 workflow {
 
@@ -26,5 +26,5 @@ workflow {
                             .splitCsv(header:true)
                             .map {row-> tuple(row.sample_id, [file(row.fastq_1), file(row.fastq_2)])}
         }
-    KrakenFlow(params.bowtie2_index, params.kraken2_db, reads_ch)
+    TaxoFlow(params.bowtie2_index, params.kraken2_db, reads_ch)
 }
