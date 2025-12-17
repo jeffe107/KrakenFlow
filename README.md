@@ -17,7 +17,7 @@ It is a reproducible Nextflow pipeline for fast, accurate taxonomic profiling of
 
 ### Pipeline at a glance
 <p align="center">
-    <img src="assets/workflow_TaxoFlow.png" alt="Workflow" width="90%">
+    <img src="assets/workflow_taxoflow.png" alt="Workflow" width="90%">
 </p>
 
 ### Requirements
@@ -115,6 +115,7 @@ If you use this workflow, please cite the underlying tools:
 - Ondov BD et al. Krona. BMC Bioinformatics (2011).
 
 And the training material adapted for the R Markdown report as referenced in `bin/report.Rmd`.
+
 
 
 
