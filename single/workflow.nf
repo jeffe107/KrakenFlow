@@ -11,7 +11,7 @@ include { KT_IMPORT_TEXT              }  from './modules/ktImportText.nf'
  * workflow
  */
 
-workflow KrakenFlow {
+workflow TaxoFlow {
     // required inputs
     take:
         bowtie2_index
