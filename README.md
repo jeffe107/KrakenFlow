@@ -1,10 +1,10 @@
-## KrakenFlow
+## TaxoFlow
 
 <p align="center">
-    <img src="assets/logo_krakenflow.png" alt="KrakenFlow" width="50%">
+    <img src="assets/logo_TaxoFlow.png" alt="TaxoFlow" width="50%">
 </p>
 
-This pipeline is part of a tutorial. Please visit [https://krakenflowtutorial.netlify.app/](https://krakenflowtutorial.netlify.app/) to learn how it was built. 
+This pipeline is part of a tutorial. Please visit [https://TaxoFlowtutorial.netlify.app/](https://TaxoFlowtutorial.netlify.app/) to learn how it was built. 
 
 It is a reproducible Nextflow pipeline for fast, accurate taxonomic profiling of short‑read metagenomic datasets. It combines host/contaminant filtering with Bowtie2, taxonomic assignment with Kraken2, abundance re‑estimation with Bracken, interactive visualization with Krona, and an optional multi‑sample report built with phyloseq/R Markdown.
 
@@ -17,7 +17,7 @@ It is a reproducible Nextflow pipeline for fast, accurate taxonomic profiling of
 
 ### Pipeline at a glance
 <p align="center">
-    <img src="assets/workflow_krakenflow.png" alt="Workflow" width="90%">
+    <img src="assets/workflow_TaxoFlow.png" alt="Workflow" width="90%">
 </p>
 
 ### Requirements
@@ -58,7 +58,7 @@ You can provide input reads in two ways:
 Defaults in `nextflow.config` point to training paths; you will typically override them on the command line.
 
 ### Quickstart
-Make sure you have Nextflow and Docker installed, then from the `KrakenFlow` directory:
+Make sure you have Nextflow and Docker installed, then from the `TaxoFlow` directory:
 
 Basic run with the included example yeast index and sample layout (replace the Kraken2 DB path):
 
@@ -115,5 +115,6 @@ If you use this workflow, please cite the underlying tools:
 - Ondov BD et al. Krona. BMC Bioinformatics (2011).
 
 And the training material adapted for the R Markdown report as referenced in `bin/report.Rmd`.
+
 
 
